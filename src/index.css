@@ -3,11 +3,19 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 body{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+#root{
     max-width: 1440px;
     @apply bg-primary;
     font-family: 'Lara', serif;
-    
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    margin: 0 auto; /* Centraliza horizontalmente dentro do max-width */
 }

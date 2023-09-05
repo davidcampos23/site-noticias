@@ -9,13 +9,13 @@ function Titulo()
 
     return(
         <>
-        <section class="flex justify-center mt-5">
-            <div class="mr-72  mt-4">
+        <section className="flex flex-row justify-center items-center mt-2">
+            {/* <div className="mr-72  mt-4">
                 <h4>{dia[x]}</h4>
                 <h4>{data}</h4>
-            </div>
+            </div> */}
             <div>
-                <h1 class="text-7xl ">DAILY NEWS</h1>
+                <h1 className="text-7xl ">DAILY NEWS</h1>
             </div>
         </section>
         </>
