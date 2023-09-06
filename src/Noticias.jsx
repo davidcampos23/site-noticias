@@ -25,7 +25,7 @@ const Noticias = () =>
                     const {abstract, title, byline, section, short_url} = noticia
 
                     return(
-                        <noticia key={title}>
+                        <div key={title}>
                           <h2 className="text-lg font-bold mb-2 mt-4">{title}</h2>
                           <p className='text-justify'>{abstract}</p>
             
@@ -34,7 +34,7 @@ const Noticias = () =>
                             <li><span className='font-bold'>Section Name:</span> {section}</li>
                           </ul>
                           <a href={short_url} target="_blank" className='underline'>Web Resource</a>
-                        </noticia>   
+                        </div>   
                     )
                 })}
             </section>
