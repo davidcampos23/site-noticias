@@ -11,7 +11,7 @@ const Artigos = ()=> {
       try {
           const res = await fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${term}&api-key=${import.meta.env.VITE_APP_API_KEY}`)
           const articles = await res.json()
-          setArticles(articles.response.docs.slice(0,2))
+          setArticles(articles.response.docs.slice(0,3))
         }
       catch (error) {
         console.error(error)  

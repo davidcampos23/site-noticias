@@ -6,7 +6,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: gray;
+    background-color: dimgray;
 }
 
 #root{
@@ -18,4 +18,5 @@ body{
     justify-content: center; /* Centraliza verticalmente */
     align-items: center; /* Centraliza horizontalmente */
     margin: 0 auto; /* Centraliza horizontalmente dentro do max-width */
+    border: 1px solid black;
 }

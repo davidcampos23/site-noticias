@@ -30,19 +30,18 @@ function MaisPopulares()
                     const thumbnailURL = mediaMetadata[2].url;
 
                     return(
-                        <div key={id} className="flex w-full mt-5 mb-5 p-5">
-                            <div className="w-2/3">
-                                <img className="w-2/3 h-80" src={thumbnailURL} alt={title} />
+                        <div key={id} className="flex my-5 px-5">
+                            <div className="w-1/2">
+                                <img className="w-full h-80" src={thumbnailURL} alt={title} />
                             </div>
-                            <div className="w-1/3 text-left">
-                                <h2 className="text-lg font-bold mb-2 mt-4">{title}</h2>
-                                <p className='text-justify mb-2'>{abstract}</p>
-                                
-                                <ul className='my-3'>
+                            <div className="w-1/2 ml-8">
+                                <h2 className="text-2xl font-bold mb-2 mt-4">{title}</h2>
+                                <p className="text-justify text-lg mb-2 mt-5">{abstract}</p>
+                                <ul className="my-8">
                                     <li>{byline}</li>
-                                    <li><span className='font-bold'>Section Name:</span> {section}</li>
+                                    <li><span className="font-bold">Section Name:</span> {section}</li>
                                 </ul>
-                                <a href={url} target="_blank" className='underline'>Web Resource</a>
+                                <a href={url} target="_blank" className="underline">Web Resource</a>
                             </div>
                         </div>
                     )

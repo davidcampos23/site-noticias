@@ -9,7 +9,7 @@ const Noticias = () =>
             try {
                 const res = await fetch (`https://api.nytimes.com/svc/topstories/v2/world.json?api-key=${import.meta.env.VITE_APP_API_KEY}`)
                 const noticias = await res.json()
-                setNoticias(noticias.results.slice(1,4))
+                setNoticias(noticias.results.slice(1,5))
             } catch (error) {
                 error(error)
             }

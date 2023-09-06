@@ -5,6 +5,7 @@ import MaisPopulares from './MaisPopulares.jsx'
 import Categorias from './Categorias.jsx'
 import Noticias from './Noticias.jsx'
 import Artigos from './Artigos.jsx'
+import Rodape from './Rodape.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -16,5 +17,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Noticias/>
       <Artigos />
     </div>
+    <Rodape/>
   </React.StrictMode>,
 )
