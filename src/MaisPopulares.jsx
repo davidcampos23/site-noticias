@@ -26,7 +26,7 @@ function MaisPopulares()
                 {maisPopular.map((popular) =>{
                     const { abstract, byline, section, title, id, url, media} = popular;
                     
-                    const mediaMetadata = popular.media[0]['media-metadata'];
+                    const mediaMetadata = media && media[0] && media[0]['media-metadata'];
                     const thumbnailURL = mediaMetadata[2].url;
 
                     return(
