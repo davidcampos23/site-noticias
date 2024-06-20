@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 
 function MaisPopulares()
 {
-    const [maisPopular, setMaisPopular] = useState([])
+    const [maisPopular, setMaisPopular, setMaisPopularSecond] = useState([])
 
     useEffect (() =>{
         const fatchPopular = async () =>{
@@ -30,9 +30,9 @@ function MaisPopulares()
                     const thumbnailURL = mediaMetadata[2].url;
 
                     return(
-                        <div key={id} className="flex my-5 px-5">
+                        <div key={id} className="flex mt-8 mb-5 pr-5">
                             <div className="w-1/2">
-                                <img className="w-full h-80" src={thumbnailURL} alt={title} />
+                                <a href={url} target="_blank"><img className="w-full h-96" src={thumbnailURL} alt={title} /></a>
                             </div>
                             <div className="w-1/2 ml-8">
                                 <h2 className="text-2xl font-bold mb-2 mt-4">{title}</h2>

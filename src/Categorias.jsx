@@ -12,7 +12,7 @@ function Categorias()
 
     return(
         <>
-            <section className="border-b border-t border-black p-1 w-full flex gap-16"> 
+            <section className="px-4 w-full h-12 flex text-xl fundo items-center justify-between"> 
                 {categoriasElements}
             </section>
         </>

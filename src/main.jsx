@@ -5,18 +5,18 @@ import MaisPopulares from './MaisPopulares.jsx'
 import Categorias from './Categorias.jsx'
 import Noticias from './Noticias.jsx'
 import Artigos from './Artigos.jsx'
-import Rodape from './Rodape.jsx'
 import './index.css'
+import MaisPopularesExtend from './MaisPopularesExtend.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Titulo/>
-    <MaisPopulares/>
     <Categorias/>
+    <MaisPopulares/>
+    <MaisPopularesExtend/>
     <div className='flex'>
-      <Noticias/>
       <Artigos />
+      <Noticias/>
     </div>
-    <Rodape/>
   </React.StrictMode>,
 )

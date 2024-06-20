@@ -6,17 +6,21 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: dimgray;
+    background-color: whitesmoke;
 }
 
 #root{
     max-width: 1440px;
-    @apply bg-primary;
+    background-color: whitesmoke;
     font-family: 'Lara', serif;
     display: flex;
     flex-direction: column; /* Alinha o conteúdo verticalmente */
     justify-content: center; /* Centraliza verticalmente */
     align-items: center; /* Centraliza horizontalmente */
     margin: 0 auto; /* Centraliza horizontalmente dentro do max-width */
-    border: 1px solid black;
+    
+}
+
+.fundo{
+    background-color: rgb(212, 212, 212);
 }

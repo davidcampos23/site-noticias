@@ -9,7 +9,7 @@ const Noticias = () =>
             try {
                 const res = await fetch (`https://api.nytimes.com/svc/topstories/v2/world.json?api-key=${import.meta.env.VITE_APP_API_KEY}`)
                 const noticias = await res.json()
-                setNoticias(noticias.results.slice(1,5))
+                setNoticias(noticias.results.slice(1,10))
             } catch (error) {
                 error(error)
             }
@@ -20,7 +20,8 @@ const Noticias = () =>
 
     return(
         <>
-            <section className='flex flex-col w-1/3 mr-auto p-5'>
+            <section className='flex flex-col w-1/3 ml-6 mt-6 border-t border-black'>
+            <h1 className='mt-4 text-2xl font-bold'>World News</h1>
                 {noticias.map((noticia) =>{
                     const {abstract, title, byline, section, short_url} = noticia
 

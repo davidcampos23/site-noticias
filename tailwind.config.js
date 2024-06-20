@@ -7,7 +7,13 @@ export default {
   theme: {
     extend: {
       colors:{
-        primary: '#E1E1DD',
+
+      },
+      width:{
+        imageExtend: '470px',
+      },
+      height:{
+        imageArticle: '440px',
       },
       
     },
